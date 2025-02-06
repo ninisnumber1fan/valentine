@@ -1,0 +1,18 @@
+.cat-gallery img {
+    width: 250px;
+    height: auto;
+    animation: bounce 2s infinite ease-in-out, glowingOutline 1.5s infinite alternate;
+    border-radius: 10px; /* optional for rounded corners */
+}
+
+@keyframes glowingOutline {
+    0% {
+        box-shadow: 0 0 5px #ff3385, 0 0 15px #ff3385, 0 0 30px #ff3385;
+    }
+    50% {
+        box-shadow: 0 0 15px #ff3385, 0 0 30px #ff3385, 0 0 45px #ff3385;
+    }
+    100% {
+        box-shadow: 0 0 5px #ff3385, 0 0 15px #ff3385, 0 0 30px #ff3385;
+    }
+}
